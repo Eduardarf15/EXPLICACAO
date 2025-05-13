@@ -1,0 +1,41 @@
+**EXPLICAÇÃO OPERADOR TERNÁRIO**
+# 🧠 Operador Ternário em C++ — Explicado de Forma Simples
+
+Este arquivo explica o que é o **operador ternário** em C++, como ele funciona, com **exemplos simples** e **um exercício resolvido**. Ideal pra quem está começando agora.
+
+## 🤔 O que é o Operador Ternário?
+
+O **operador ternário** é uma forma **curta e rápida** de escrever um `if...else`.
+
+### ✍️ Sintaxe:
+
+```cpp
+condição ? valor_se_verdadeiro : valor_se_falso;
+
+### 🍰 Exemplo Simples
+cpp
+Copiar
+Editar
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int idade = 20;
+
+    string resposta = (idade >= 18) ? "Pode entrar" : "Não pode entrar";
+
+    cout << resposta << endl;
+
+    return 0;
+}
+
+**IF E ELSE**
+
+string resposta;
+
+if (idade >= 18) {
+    resposta = "Pode entrar";
+} else {
+    resposta = "Não pode entrar";
+}
