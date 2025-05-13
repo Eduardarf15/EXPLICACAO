@@ -1,0 +1,70 @@
+## Banco de dados para a prova da Melissa
+# Introdução a Banco de Dados
+
+## 1. O que é Banco de Dados?
+É uma coleção organizada de dados relacionados, que possui significado e pode ser manipulada para gerar informações úteis.
+
+**Dados:** Fatos brutos (ex: “João”, “25”, “Engenharia”).
+
+**Informação:** Dados organizados que têm significado (ex: João tem 25 anos e cursa Engenharia).
+
+**Metadados:** Dados que descrevem dados (ex: tipo de dado, tamanho do campo etc.).
+
+## 2. Vantagens do Banco de Dados
+- Redução da redundância de dados
+- Maior consistência e integridade
+- Segurança dos dados
+- Acesso compartilhado e simultâneo
+- Facilidade de recuperação e atualização
+
+## 3. História dos Bancos de Dados
+- **Década de 1960:** Sistemas baseados em arquivos — baixa flexibilidade.
+- **Década de 1970:** Modelos hierárquicos e de rede (ex: IMS e CODASYL).
+- **1970 em diante:** Surgimento do modelo relacional (proposto por E. F. Codd).
+- **Atualmente:** Modelos relacionais dominam, mas surgem os NoSQL para grandes volumes de dados (Big Data).
+
+## 4. Arquitetura de Banco de Dados
+### 3 Níveis de Abstração:
+- **Nível externo:** Visão do usuário.
+- **Nível conceitual:** Estrutura lógica do banco como um todo.
+- **Nível interno:** Organização física dos dados no armazenamento.
+
+## 5. SGBD (Sistema Gerenciador de Banco de Dados)
+Software que gerencia os dados e o acesso a eles.
+
+**Exemplos:** MySQL, PostgreSQL, Oracle, SQL Server.**
+
+### Funções:
+- Criar, armazenar e acessar dados
+- Controle de acesso e segurança
+- Garantia de integridade
+- Suporte a múltiplos usuários
+
+## 6. Modelos de Dados
+- **Modelo Relacional:** Tabelas com linhas (tuplas) e colunas (atributos).
+- **Modelo Hierárquico:** Dados organizados como uma árvore (pai-filho).
+- **Modelo de Rede:** Dados com relações complexas (grafo).
+- **Modelo Objeto-Relacional e Objeto:** Combinam conceitos de OOP com banco de dados.
+
+## 7. Operações Básicas
+Conhecidas como CRUD:
+- **Create** (criar dados)
+- **Read** (ler dados)
+- **Update** (atualizar dados)
+- **Delete** (remover dados)
+
+## 8. Modelo Entidade-Relacionamento (ER)
+Usado para modelar os dados antes da implementação.
+
+### Componentes principais:
+- **Entidades:** Objetos do mundo real (ex: Aluno, Curso)
+- **Atributos:** Características das entidades (ex: nome, idade)
+- **Relacionamentos:** Como as entidades se ligam (ex: Aluno matricula-se em Curso)
+
+## 9. Linguagens de Banco de Dados
+- **DDL (Data Definition Language):** cria e modifica estrutura (ex: CREATE TABLE).
+- **DML (Data Manipulation Language):** manipula os dados (ex: SELECT, INSERT, UPDATE, DELETE).
+- **DCL (Data Control Language):** controla permissões (ex: GRANT, REVOKE).
+
+## Dica Final para a Prova
+Se concentre nos conceitos fundamentais: o que é um banco de dados, vantagens, modelos, SGBD, e como modelar com o diagrama ER. Foque também em diferenciar os tipos de linguagem SQL.
