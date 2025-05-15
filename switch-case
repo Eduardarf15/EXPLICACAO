@@ -1,0 +1,140 @@
+🎓 Aula: Estrutura switch-case em C++
+🧠 Objetivo da aula
+Entender como funciona a estrutura switch-case.
+
+Saber quando usá-la no lugar de if-else.
+
+Aprender a sintaxe correta com exemplos práticos.
+
+🔧 1. O que é o switch-case?
+O switch é uma estrutura de controle de fluxo que permite executar diferentes blocos de código dependendo do valor de uma variável.
+
+Ele é uma alternativa ao uso de vários if-else, principalmente quando se testa o valor exato de uma variável (geralmente int, char ou enum).
+
+📚 2. Sintaxe básica
+cpp
+Copiar
+Editar
+switch (expressao) {
+    case valor1:
+        // bloco de código
+        break;
+
+    case valor2:
+        // outro bloco de código
+        break;
+
+    // ...
+
+    default:
+        // bloco padrão se nenhum case for satisfeito
+}
+🔸 break é usado para sair do switch. Sem ele, o código continua executando os próximos cases (comportamento chamado "fall-through").
+
+✅ 3. Exemplo prático
+cpp
+Copiar
+Editar
+#include <iostream>
+using namespace std;
+
+int main() {
+    int dia;
+    cout << "Digite um número de 1 a 7: ";
+    cin >> dia;
+
+    switch (dia) {
+        case 1:
+            cout << "Domingo\n";
+            break;
+        case 2:
+            cout << "Segunda-feira\n";
+            break;
+        case 3:
+            cout << "Terça-feira\n";
+            break;
+        case 4:
+            cout << "Quarta-feira\n";
+            break;
+        case 5:
+            cout << "Quinta-feira\n";
+            break;
+        case 6:
+            cout << "Sexta-feira\n";
+            break;
+        case 7:
+            cout << "Sábado\n";
+            break;
+        default:
+            cout << "Número inválido!\n";
+    }
+
+    return 0;
+}
+🛑 4. Importância do break
+Veja o que acontece sem o break:
+
+cpp
+Copiar
+Editar
+int x = 2;
+
+switch (x) {
+    case 1:
+        cout << "Um\n";
+    case 2:
+        cout << "Dois\n";
+    case 3:
+        cout << "Três\n";
+    default:
+        cout << "Outro\n";
+}
+Saída:
+
+css
+Copiar
+Editar
+Dois
+Três
+Outro
+Isso aconteceu porque o switch continuou executando os próximos blocos sem interrupção. Para evitar isso, usamos break.
+
+🧪 5. switch com char
+cpp
+Copiar
+Editar
+char opcao;
+cin >> opcao;
+
+switch (opcao) {
+    case 'a':
+        cout << "Você escolheu A\n";
+        break;
+    case 'b':
+        cout << "Você escolheu B\n";
+        break;
+    default:
+        cout << "Opção inválida\n";
+}
+⚠️ 6. Limitações do switch
+Só funciona com tipos inteiros, char e enum (não funciona com string, float ou double).
+
+Não permite usar expressões booleanas ou condições como x > 5.
+
+🧠 7. Quando usar switch?
+Use switch-case quando:
+
+Você tem uma variável sendo comparada com vários valores fixos.
+
+Quer deixar seu código mais organizado e legível do que com vários if-else.
+
+📝 Exercício proposto
+Crie um programa que receba uma nota de 0 a 10 e exiba a classificação:
+
+9 ou 10: Excelente
+
+7 ou 8: Bom
+
+5 ou 6: Regular
+
+0 a 4: Ruim
